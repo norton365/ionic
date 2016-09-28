@@ -1,18 +1,16 @@
-/// <reference path="lib/require.js" />
-/// <reference path="lib/jquery-2.1.0.js" />
+//define(['require',
+//		'angular',
+//		'angular-route',
+//      'jquery'
+//     ],function(require,angular){
+//          'use strict';
+//          console.log(angular)
+//          
+////          require(['domReady!'],function(document){
+////              angular.bootstrap(document,['myApp']);
+////          });
+//      });
 
-require.config({
-	baseUrl:'js/lib/',
-	paths: {
-		jquery: 'jquery.min',
-		ionicBundle: 'ionic-v1.3.1/js/ionic.bundle',
-		underscore: 'underscore-min',
-		common:'../common',
-	}
-});
-
-require(['jquery','ionicBundle','common'], function($,ionB,com) {
-	angular.module('myApp', []).controller('mycontroller', function($scope) {
-		com.log($scope);
-	})
-});
+define(['require','angular'],function(require,angular){
+	
+})
