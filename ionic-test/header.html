@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="ionicApp">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -8,27 +9,39 @@
 		<meta name="format-detection" content="telephone=no">
 		<title></title>
 		<link href="js/lib/ionic-v1.3.1/css/ionic.css" rel="stylesheet" />
-		<script src="js/lib/require.js" data-main="js/main.js"></script>
+		<script src="js/lib/ionic-v1.3.1/js/ionic.bundle.js"></script>
+		<script>
+			angular.module('ionicApp', ['ionic'])
+		</script>
 	</head>
-	<body ng-controller='mycontroller'>
+
+	<body>
+		<!--头部-->
 		<div class="bar bar-header bar-positive">
 			<h1 class="title">头部</h1>
 		</div>
-		<div class="content has-header padding">
-			<h3 class="text-center">Header(头部)</h3>
-			<p>Header是固定在屏幕顶部的组件,可以包如标题和左右的功能按钮。 ionic 默认提供了许多种颜色样式，你可以调用不同的样式名，当然也可以自定义一个。
-				<p>
-					<ul>
-						<li><button class="button button-positive button-outline button-block">bar-light</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-stable</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-positive</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-calm</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-balanced</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-energized</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-assertive</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-royal</button></li>
-						<li><button class="button button-positive button-outline button-block">bar-dark</button></li>
-					</ul>
+		<!--<div class="bar bar-subheader">
+			<h2 class="title">Sub Header（副标题）</h2>
+		</div>-->
+
+		<!--内容-->
+		<ion-content class="content padding has-header has-footer" scroll='true'>
+				<h3 class="text-center">Header(头部)</h3>
+				<p>Header是固定在屏幕顶部的组件,可以包如标题和左右的功能按钮。 ionic 默认提供了许多种颜色样式，你可以调用不同的样式名，当然也可以自定义一个。</p>
+				<ul>
+					<li><button class="button button-light button-outline button-block">bar-light</button></li>
+					<li><button class="button button-stable button-outline button-block">bar-stable</button></li>
+					<li><button class="button button-positive button-outline button-block">bar-positive</button></li>
+					<li><button class="button button-calm button-outline button-block">bar-calm</button></li>
+					<li><button class="button button-balanced button-outline button-block">bar-balanced</button></li>
+					<li><button class="button button-energized button-outline button-block">bar-energized</button></li>
+					<li><button class="button button-assertive button-outline button-block">bar-assertive</button></li>
+					<li><button class="button button-royal button-outline button-block">bar-royal</button></li>
+					<li><button class="button button-dark button-outline button-block">bar-dark</button></li>
+				</ul>
+		</ion-content>
+		<div class="bar bar-footer bar-positive">
+			<div class="title">底部</div>
 		</div>
 	</body>
 

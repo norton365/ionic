@@ -5,17 +5,17 @@ require.config({
 	baseUrl: 'js/lib/',
 	paths: {
 		'jquery': 'jquery.min',
-//		'underscore': 'underscore-min',
+		'underscore': 'underscore-min',
 		'angular':'ionic-v1.3.1/js/angular/angular.min',
 		'angular-route':'ionic-v1.3.1/js/angular-ui/angular-ui-router.min',
-//		'angular-animate':'ionic-v1.3.1/js/angular/angular-animate.min',
-//		'angular-resource':'ionic-v1.3.1/js/angular/angular-resource.min',
-//		'angular-sanitize':'ionic-v1.3.1/js/angular/angular-sanitize.min',		
-//		'domReady':'ionic-v1.3.1/js/angular/domReady.min',
-//		'ionic':'ionic-v1.3.1/js/ionic.min',
-//		'ionic-bundle': 'ionic-v1.3.1/js/ionic.bundle',
-//		'ionic-angular':'ionic-v1.3.1/js/ionic-angular.min',
-//		'common': '../common',
+		'angular-animate':'ionic-v1.3.1/js/angular/angular-animate.min',
+		'angular-resource':'ionic-v1.3.1/js/angular/angular-resource.min',
+		'angular-sanitize':'ionic-v1.3.1/js/angular/angular-sanitize.min',		
+		'domReady':'ionic-v1.3.1/js/angular/domReady.min',
+		'ionic':'ionic-v1.3.1/js/ionic.min',
+		'ionic-bundle': 'ionic-v1.3.1/js/ionic.bundle',
+		'ionic-angular':'ionic-v1.3.1/js/ionic-angular.min',
+		'common': '../common',
 		'app': '../app',
 	},
     shim:{
@@ -25,6 +25,9 @@ require.config({
         'angular-route':{
         	deps:['angular'],
             exports:'angular-route'
+        },
+        'ionic-bundle':{
+            exports:'ionic-bundle'
         },
     },
     deps:['app'],

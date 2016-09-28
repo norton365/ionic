@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title></title>
+		<link href="js/lib/ionic-v1.3.1/css/ionic.css" rel="stylesheet" />
+		<script src="js/lib/ionic-v1.3.1/js/ionic.bundle.js"></script>
+		<script>
+			angular.module('ionicApp', ['ionic'])
+		</script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="bar bar-header bar-positive">
+			<h1 class="title">Card展示</h1>
+		</div>
+		<!--<div class="bar bar-subheader">
+			<h2 class="title">Sub Header（副标题）</h2>
+		</div>-->
+
+		<!--内容-->
+		<ion-content class="content padding has-header has-footer" scroll='true'>
+			<!--滚动-->
+			<!--<ion-scroll direction="y" >-->
+			<div class="card">
+				<div class="item item-text-wrap">
+					基本卡片，包含了文本信息。
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="item item-divider">
+					卡片头部！
+				</div>
+				<div class="item item-text-wrap">
+					基本卡片，包含了文本信息。
+				</div>
+				<div class="item item-divider">
+					卡片底部！
+				</div>
+			</div>
+
+			<div class="list card">
+
+				<a href="#" class="item item-icon-left">
+					<i class="icon ion-home"></i> Enter home address
+				</a>
+
+				<a href="#" class="item item-icon-left">
+					<i class="icon ion-ios-telephone"></i> Enter phone number
+				</a>
+
+				<a href="#" class="item item-icon-left">
+					<i class="icon ion-wifi"></i> Enter wireless password
+				</a>
+
+				<a href="#" class="item item-icon-left">
+					<i class="icon ion-card"></i> Enter card information
+				</a>
+
+			</div>
+
+			<div class="list card">
+				<div class="item item-avatar">
+					<img src="http://www.runoob.com/try/demo_source/nin_logo.jpeg">
+					<h2>Pretty Hate Machine</h2>
+					<p>Nine Inch Nails</p>
+				</div>
+
+				<div class="item item-image">
+					<img src="http://www.runoob.com/try/demo_source/41D5vU4I1NL.jpg">
+				</div>
+
+				<a class="item item-icon-left assertive" href="#">
+					<i class="icon ion-music-note"></i> Start listening
+				</a>
+
+			</div>
+
+			<div class="list card">
+
+				<div class="item item-avatar">
+					<img src="http://www.runoob.com/try/demo_source/mcfly.jpg">
+					<h2>Marty McFly</h2>
+					<p>November 05, 1955</p>
+				</div>
+
+				<div class="item item-body">
+					<img class="full-image" src="http://www.runoob.com/try/demo_source/delorean.jpg">
+					<p>
+						菜鸟教程 -- 学的不仅是技术，更是梦想！<br> 菜鸟教程 -- 学的不仅是技术，更是梦想！<br> 菜鸟教程 -- 学的不仅是技术，更是梦想！<br> 菜鸟教程 -- 学的不仅是技术，更是梦想！
+					</p>
+					<p>
+						<a href="#" class="subdued">1 喜欢</a>
+						<a href="#" class="subdued">5 评论</a>
+					</p>
+				</div>
+
+				<div class="item tabs tabs-secondary tabs-icon-left">
+					<a class="tab-item" href="#">
+						<i class="icon ion-thumbsup"></i> 喜欢
+					</a>
+					<a class="tab-item" href="#">
+						<i class="icon ion-chatbox"></i> Comment
+					</a>
+					<a class="tab-item" href="#">
+						<i class="icon ion-share"></i> 分享
+					</a>
+				</div>
+
+			</div>
+		</ion-content>
+		<div class="bar bar-footer bar-positive">
+			<div class="title">底部</div>
+		</div>
+	</body>
+
+</html>
